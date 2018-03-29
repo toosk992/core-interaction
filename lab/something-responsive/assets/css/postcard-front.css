@@ -1,0 +1,36 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+}
+
+main {
+    background-image: url("../img/front.jpeg");
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    border: black 2px solid;
+    margin: 50px;
+}
+
+a {
+    font-family: "Futura";
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: pink;
+}

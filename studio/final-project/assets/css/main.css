@@ -1,0 +1,40 @@
+body {
+	overflow: hidden;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.tv {
+	display: flex;
+	justify-content: center;
+	height: 98vh;
+}
+
+img {
+    width: 600px;
+    height: 600px;
+    z-index: 2;
+}
+
+.vid {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	bottom: 571px;
+	left: 40px;
+}
+
+video {
+    z-index: 1;
+    position: relative;
+    height: 430px;
+    width: 333px;
+}

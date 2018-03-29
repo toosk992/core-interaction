@@ -1,0 +1,24 @@
+* {box-sizing: border-box;}
+
+body {
+    background-color: #FCF559;
+    padding: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+.outer {
+    background-color: #E3AC08;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    background-color: #B75A0D;
+    width: 200px;
+    height: 200px;
+}

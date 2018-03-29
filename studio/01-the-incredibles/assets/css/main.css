@@ -1,0 +1,87 @@
+@font-face {
+    font-family: forum;
+    src: url("../fonts/forum.otf");
+}
+
+.container {
+    display: flex;
+}
+
+body {
+  color: black;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-style: normal;
+  margin-bottom: 80px;
+}
+
+h1 {
+    font-family: "Neuzeit Grotesk";
+    font-weight: 600;
+    font-size: 140px;
+    color: blue;
+    margin-bottom: 0;
+}
+
+h1:hover {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-color: blue;
+    -webkit-text-stroke-width: 1px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "forum";
+}
+
+p {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "forum";
+    padding-left: 150px;
+    padding-right: 100px;
+}
+
+a:hover {
+  color: #e88458;
+}
+
+#back {
+    font-family: "Neuzeit Grotesk";
+    font-size: 20px;
+}
+
+#parr-home {
+    position: relative;
+    width: 70%;
+    height: 40%;
+    top: 0px;
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#parr-home:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0)%);
+}
+
+#edna-home {
+    position: relative;
+    width: 70%;
+    height: 40%;
+    top: 20px;
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%)
+}
+
+#edna-home:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0)%);
+}

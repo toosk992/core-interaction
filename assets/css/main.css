@@ -1,0 +1,47 @@
+@font-face {
+    font-family: forum;
+    src: url("../fonts/forum.otf");
+}
+
+.container {
+    display: flex;
+}
+
+body {
+  color: black;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-style: normal;
+}
+
+h1 {
+    font-family: "Neuzeit Grotesk";
+    font-weight: 600;
+    font-size: 120px;
+    color: blue;
+    margin-bottom: 0;
+}
+
+h1:hover {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-color: blue;
+    -webkit-text-stroke-width: 1px;
+}
+
+p {
+    color: black;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "forum";
+    padding-left: 150px;
+    padding-right: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  color: #e88458;
+}
