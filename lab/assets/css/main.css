@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-    font-family: "Neuzeit Grotesk";
+    font-family: "neuzeit-grotesk",sans-serif;
     font-weight: 600;
     font-size: 120px;
     color: blue;
@@ -48,6 +48,6 @@ a:active {
 }
 
 #back {
-    font-family: "Neuzeit Grotesk";
+    font-family: "neuzeit-grotesk",sans-serif;
     font-size: 20px;
 }
