@@ -1,3 +1,8 @@
+@font-face {
+    font-family: forum;
+    src: url("../fonts/forum.otf");
+}
+
 body {
 	overflow: hidden;
 }
