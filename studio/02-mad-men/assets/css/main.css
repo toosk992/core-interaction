@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: Neuzeit Grotesk, sans-serif;
+  font-family: "neuzeit-grotesk",sans-serif;
   color: black;
   margin: 0;
   padding-bottom: 100px;
@@ -22,7 +22,7 @@ body {
 }
 
 h1 {
-    font-family: "Neuzeit Grotesk";
+    font-family: "neuzeit-grotesk",sans-serif;
     font-weight: 600;
     font-size: 140px;
     color: blue;
@@ -58,7 +58,7 @@ a:hover {
 }
 
 #back {
-    font-family: "Neuzeit Grotesk";
+    font-family: "neuzeit-grotesk",sans-serif;
     font-size: 20px;
 }
 
