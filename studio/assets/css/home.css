@@ -1,0 +1,110 @@
+@font-face {
+    font-family: domaine;
+    src: url("../fonts/domaine.otf");
+}
+
+.container {
+    position: relative;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h1 {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 300px;
+    color: #ffce00;
+    z-index: 5;
+}
+
+.banner-image {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.movies {
+    position: relative;
+    margin-left: 160px;
+}
+
+.movies-text {
+    position: absolute;
+    font-family: "domaine";
+    font-size: 90px;
+    z-index: 10;
+    transform: rotate(270deg);
+    right: 1120px;
+    top: 190px;
+    text-decoration: none;
+    color: black;
+}
+
+.movies-text:hover {
+    color: #ffce00;
+}
+
+.movie-image {
+    width: 562px;
+    height: 422px;
+    z-index: 5;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.square-1 {
+    width: 562px;
+    height: 422px;
+    background-color: #ffce00;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    z-index: 1;
+}
+
+.television {
+    position: relative;
+    margin-right: 160px;
+}
+
+.television-text {
+    position: absolute;
+    font-family: "domaine";
+    font-size: 90px;
+    z-index: 10;
+    right: 245px;
+    top: -80px;
+    text-decoration: none;
+    color: black;
+}
+
+.television-text:hover {
+    color: #ffce00;
+}
+
+.television-image {
+    width: 562px;
+    height: 422px;
+    z-index: 5;
+    position: absolute;
+    top: 0px;
+    right: 40px;
+}
+
+.square-2 {
+    width: 562px;
+    height: 422px;
+    background-color: #ffce00;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}

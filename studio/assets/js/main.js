@@ -1,9 +1,9 @@
 // MAD MEN
 
-var document = document.querySelector('.outer')
+var outer = document.querySelector('.outer')
 var image = document.querySelector('.image')
 
-document.addEventListener('scroll', function(event) {
+outer.addEventListener('scroll', function(event) {
 	console.log(outer.scrollTop)
 	image.style.transform = 'scale(' + outer.scrollTop / 10 + ')'
 })
