@@ -21,6 +21,12 @@ h1 {
     z-index: 5;
 }
 
+h1:hover {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-color: #ffce00;
+    -webkit-text-stroke-width: 1px;
+}
+
 .banner-image {
     top: 0;
     left: 0;
@@ -60,6 +66,10 @@ h1 {
     left: 20px;
 }
 
+.movie-image:hover {
+    opacity: .5;
+}
+
 .square-1 {
     width: 562px;
     height: 422px;
@@ -68,6 +78,21 @@ h1 {
     top: 0px;
     left: 40px;
     z-index: 1;
+}
+
+.movie-video {
+    opacity: 0;
+    width: 562px;
+    height: 422px;
+    z-index: 5;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.movie-video:hover {
+    opacity: 1;
+    transition: opacity .5s ease-in;
 }
 
 .television {
@@ -107,4 +132,19 @@ h1 {
     top: 20px;
     right: 20px;
     z-index: 1;
+}
+
+.television-video {
+    opacity: 0;
+    width: 562px;
+    height: 422px;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+
+.television-video:hover {
+    opacity: 1;
+    transition: opacity .5s ease-in;
 }
