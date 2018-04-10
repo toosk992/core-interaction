@@ -434,7 +434,39 @@ img:hover {
 
 /* MAD MEN */
 
+* { box-sizing: border-box; }
+
 body {
+  height: 2000px;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  background: red;
+  transform: scale(0);
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: .5s opacity;
+}
+
+.item.is-visible {
+	opacity: 1;
+}
+
+
+/* body {
 	margin: 0;
 }
 
@@ -463,7 +495,7 @@ body {
 }
 
 
-/* .row > .column {
+.row > .column {
   padding: 8px 8px;
 }
 

@@ -22,9 +22,9 @@ h1 {
 }
 
 h1:hover {
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: #ffce00;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 3px;
 }
 
 .banner-image {
