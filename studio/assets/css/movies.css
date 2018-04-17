@@ -30,9 +30,14 @@ li a:hover {
     color: #e88458;
 }
 
+.outer {
+    position: relative;
+}
+
 .subtitle {
     font-family: "neuzeit-grotesk";
-    top: 40px;
+    position: absolute;
+    top: -10px;
     padding-left: 80px;
 }
 
@@ -43,15 +48,67 @@ h1 {
     padding-left: 80px;
 }
 
-.links a {
-    font-family: "domaine";
-    font-size: 60px;
-    color: black;
-    text-decoration: none;
+.inner {
+    column-count: 2;
+    text-align: center;
 }
 
-.inner {
-    padding-left: 80px;
+.incredibles {
+    position: relative;
+}
+
+.incredibles a {
+    font-family: "domaine";
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    transform: rotate(90deg);
+    right: 35px;
+    top: 273px;
+}
+
+.catch {
+    position: relative;
+}
+
+.catch a {
+    font-family: "domaine";
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: 445px;
+    right: 140px;
+}
+
+.graduate {
+    position: relative;
+}
+
+.graduate a {
+    font-family: "domaine";
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: 445px;
+    right: 330px;
+}
+
+.budapest {
+    position: relative;
+}
+
+.budapest a {
+    font-family: "domaine";
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 200px;
+    right: -57px;
 }
 
 img {
