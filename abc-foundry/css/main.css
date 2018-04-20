@@ -1,0 +1,22 @@
+body {
+    background-color: #F3E6C3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+	font-family: "freight-display-pro",serif;
+    font-size: 120px;
+    padding-left: 50px;
+}
+
+p {
+    font-family: "sofia-pro", sans-serif;
+}
+
+.white {
+    height: 700px;
+    width: 500px;
+    background-color: white;
+}

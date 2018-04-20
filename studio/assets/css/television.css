@@ -58,11 +58,11 @@ h1 {
     text-align: center;
 }
 
-.incredibles {
+.mad-men {
     position: relative;
 }
 
-.incredibles a:hover {
+.mad-men a:hover {
     background-color: #ffce00;
     color: white;
     transition: ease-in .5s;
@@ -70,23 +70,23 @@ h1 {
     padding-right: 10px;
 }
 
-.incredibles a {
+.mad-men a {
     font-family: "domaine";
     font-size: 40px;
     color: black;
     text-decoration: none;
     position: absolute;
     transform: rotate(90deg) translateZ(1px);
-    right: 35px;
-    top: 273px;
+    right: 83px;
+    top: 340px;
     z-index: 5;
 }
 
-.catch {
+.jetsons {
     position: relative;
 }
 
-.catch a:hover {
+.jetsons a:hover {
     background-color: #ffce00;
     color: white;
     transition: ease-in .5s;
@@ -94,61 +94,14 @@ h1 {
     padding-right: 10px;
 }
 
-.catch a {
+.jetsons a {
     font-family: "domaine";
     font-size: 40px;
     color: black;
     text-decoration: none;
     position: absolute;
-    top: 445px;
-    right: 140px;
-    z-index: 5;
-}
-
-.graduate {
-    position: relative;
-}
-
-.graduate a:hover {
-    background-color: #ffce00;
-    color: white;
-    transition: ease-in .5s;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.graduate a {
-    font-family: "domaine";
-    font-size: 40px;
-    color: black;
-    text-decoration: none;
-    position: absolute;
-    top: 445px;
-    right: 330px;
-    z-index: 5;
-}
-
-.budapest {
-    position: relative;
-}
-
-.budapest a:hover {
-    background-color: #ffce00;
-    color: white;
-    transition: ease-in .5s;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.budapest a {
-    font-family: "domaine";
-    font-size: 40px;
-    color: black;
-    text-decoration: none;
-    position: absolute;
-    transform: rotate(90deg) translateZ(1px);
-    top: 200px;
-    right: -57px;
+    top: 448px;
+    right: 360px;
     z-index: 5;
 }
 
