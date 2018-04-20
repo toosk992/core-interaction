@@ -9,25 +9,42 @@ ul {
     padding: 0;
     overflow: hidden;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-li {
-    float: left;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: white;
+    border: 1px dashed black;
 }
 
 li a {
     font-family: "neuzeit-grotesk";
     display: block;
     color: black;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover {
     color: #e88458;
+}
+
+#mid a {
+    font-weight: 700;
+    color: #ffce00;
+    font-size: 60px;
+    padding-left: 0;
+    z-index: 5;
+}
+
+#movies a {
+    justify-content: center;
+    z-index: 10;
+}
+
+#television a {
+    justify-content: center;
+    z-index: 10;
 }
 
 .outer {
@@ -57,19 +74,36 @@ h1 {
     position: relative;
 }
 
+.incredibles a:hover {
+    background-color: #ffce00;
+    color: white;
+    transition: ease-in .5s;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .incredibles a {
     font-family: "domaine";
     font-size: 40px;
     color: black;
     text-decoration: none;
     position: absolute;
-    transform: rotate(90deg);
+    transform: rotate(90deg) translateZ(1px);
     right: 35px;
     top: 273px;
+    z-index: 5;
 }
 
 .catch {
     position: relative;
+}
+
+.catch a:hover {
+    background-color: #ffce00;
+    color: white;
+    transition: ease-in .5s;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .catch a {
@@ -80,10 +114,19 @@ h1 {
     position: absolute;
     top: 445px;
     right: 140px;
+    z-index: 5;
 }
 
 .graduate {
     position: relative;
+}
+
+.graduate a:hover {
+    background-color: #ffce00;
+    color: white;
+    transition: ease-in .5s;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .graduate a {
@@ -94,10 +137,19 @@ h1 {
     position: absolute;
     top: 445px;
     right: 330px;
+    z-index: 5;
 }
 
 .budapest {
     position: relative;
+}
+
+.budapest a:hover {
+    background-color: #ffce00;
+    color: white;
+    transition: ease-in .5s;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .budapest a {
@@ -106,9 +158,10 @@ h1 {
     color: black;
     text-decoration: none;
     position: absolute;
-    transform: rotate(90deg);
+    transform: rotate(90deg) translateZ(1px);
     top: 200px;
     right: -57px;
+    z-index: 5;
 }
 
 img {
