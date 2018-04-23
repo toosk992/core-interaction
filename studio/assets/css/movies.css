@@ -10,7 +10,7 @@ ul {
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding-left: 80px;
     padding-right: 80px;
 }
@@ -24,7 +24,7 @@ li a {
 }
 
 li a:hover {
-    color: #e88458;
+    color: #ffce00;
 }
 
 #mid a {
@@ -33,6 +33,18 @@ li a:hover {
     font-size: 60px;
     padding-left: 0;
     z-index: 5;
+}
+
+#mid {
+    margin-right: auto;
+}
+
+#movies {
+    flex: 0;
+}
+
+#televison {
+    flex: 0;
 }
 
 .outer {
@@ -56,6 +68,8 @@ h1 {
 .inner {
     column-count: 2;
     text-align: center;
+    margin-left: 170px;
+    margin-right: 170px;
 }
 
 .incredibles {
@@ -77,9 +91,8 @@ h1 {
     text-decoration: none;
     position: absolute;
     transform: rotate(90deg) translateZ(1px);
-    right: 35px;
-    top: 273px;
-    z-index: 5;
+    top: 55%;
+    right: -11%;
 }
 
 .catch {
@@ -100,8 +113,8 @@ h1 {
     color: black;
     text-decoration: none;
     position: absolute;
-    top: 445px;
-    right: 140px;
+    top: 87%;
+    right: 25%;
     z-index: 5;
 }
 
@@ -123,8 +136,8 @@ h1 {
     color: black;
     text-decoration: none;
     position: absolute;
-    top: 445px;
-    right: 330px;
+    top: 87%;
+    right: 45%;
     z-index: 5;
 }
 
@@ -147,12 +160,12 @@ h1 {
     text-decoration: none;
     position: absolute;
     transform: rotate(90deg) translateZ(1px);
-    top: 200px;
-    right: -57px;
+    top: 40%;
+    right: -28%;
     z-index: 5;
 }
 
 img {
-    width: 350px;
-    padding: 20px;
+    width: 370px;
+    padding: 40px;
 }

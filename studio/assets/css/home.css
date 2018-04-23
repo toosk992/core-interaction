@@ -18,13 +18,22 @@ h1 {
     font-family: "neuzeit-grotesk", sans-serif;
     font-size: 300px;
     color: #ffce00;
-    z-index: 5;
+    z-index: 10;
+    text-decoration: none;
 }
 
 h1:hover {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: #ffce00;
     -webkit-text-stroke-width: 3px;
+}
+
+.mid {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 300px;
+    color: #ffce00;
+    z-index: 10;
+    text-decoration: none;
 }
 
 .banner-image {
