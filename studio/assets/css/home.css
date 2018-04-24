@@ -3,6 +3,10 @@
     src: url("../fonts/domaine.otf");
 }
 
+body {
+    position: relative;
+}
+
 .container {
     position: relative;
 }
@@ -34,6 +38,7 @@ h1:hover {
     color: #ffce00;
     z-index: 10;
     text-decoration: none;
+    transition: 1s;
 }
 
 .banner-image {
@@ -156,4 +161,12 @@ h1:hover {
 .television-video:hover {
     opacity: 1;
     transition: opacity .5s ease-in;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #ffce00;
 }
