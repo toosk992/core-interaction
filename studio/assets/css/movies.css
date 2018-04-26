@@ -118,6 +118,30 @@ h1 {
     z-index: 5;
 }
 
+.moonrise {
+    position: relative;
+}
+
+.moonrise a:hover {
+    background-color: #ffce00;
+    color: white;
+    transition: ease-in .5s;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.moonrise a {
+    font-family: "domaine";
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    transform: rotate(90deg) translateZ(1px);
+    top: 55%;
+    right: -18%;
+    z-index: 5;
+}
+
 .graduate {
     position: relative;
 }
