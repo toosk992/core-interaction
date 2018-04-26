@@ -1,0 +1,87 @@
+@font-face {
+    font-family: domaine;
+    src: url("../fonts/domaine.otf");
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+li a {
+    font-family: "neuzeit-grotesk";
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #ffce00;
+}
+
+#mid a {
+    font-weight: 700;
+    color: #ffce00;
+    font-size: 60px;
+    padding-left: 0;
+    z-index: 5;
+}
+
+#mid {
+    margin-right: auto;
+}
+
+#movies {
+    flex: 0;
+}
+
+#televison {
+    flex: 0;
+}
+
+.outer {
+    position: relative;
+}
+
+h1 {
+    font-family: "domaine";
+    font-size: 60px;
+    font-weight: 300;
+    padding-left: 80px;
+}
+
+.subtitle-one {
+    font-family: "neuzeit-grotesk";
+    position: absolute;
+    top: -10px;
+    padding-left: 80px;
+}
+
+.subtitle-two {
+    font-family: "neuzeit-grotesk";
+    position: absolute;
+    top: 190px;
+    padding-left: 80px;
+}
+
+.subtitle-three {
+    font-family: "neuzeit-grotesk";
+    position: absolute;
+    top: 330px;
+    padding-left: 80px;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-color: #ffce00;
+    text-decoration-style: wavy;
+    color: black;
+}

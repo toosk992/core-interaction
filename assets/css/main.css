@@ -1,47 +1,32 @@
 @font-face {
-    font-family: forum;
-    src: url("../fonts/forum.otf");
+    font-family: domaine;
+    src: url("../fonts/domaine.otf");
 }
 
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-body {
-  color: black;
-  padding-left: 80px;
-  padding-right: 80px;
-  font-style: normal;
+.studio {
+    display: inline-block;
 }
 
-h1 {
-    font-family: "neuzeit-grotesk",sans-serif;
-    font-weight: 600;
-    font-size: 120px;
-    color: blue;
-    margin-bottom: 0;
-}
-
-h1:hover {
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-color: blue;
-    -webkit-text-stroke-width: 1px;
-}
-
-p {
-    color: black;
-    font-size: 40px;
-    font-weight: 400;
-    font-family: "forum";
-    padding-left: 150px;
-    padding-right: 100px;
+.lab {
+    display: inline-block;
 }
 
 a {
-  text-decoration: none;
-  color: blue;
+    font-size: 150px;
+    font-weight: 600;
+    font-family: "neuzeit-grotesk", sans-serif;
+    text-decoration: none;
+    color: #ffce00;
 }
 
 a:hover {
-  color: #e88458;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-color: #ffce00;
+    -webkit-text-stroke-width: 1px;
 }

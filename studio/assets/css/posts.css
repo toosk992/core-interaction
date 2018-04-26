@@ -125,6 +125,12 @@ img:hover {
     filter: grayscale(0)%);
 }
 
+.img1 {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0)%);
+    width: 300px;
+}
+
 /* THE INCREDIBLES */
 
 #parr-home {
