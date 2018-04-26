@@ -129,6 +129,9 @@ img:hover {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0)%);
     width: 300px;
+    display: none;
+    position: absolute;
+    right: 700px;
 }
 
 /* THE INCREDIBLES */
