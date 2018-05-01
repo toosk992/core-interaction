@@ -11,7 +11,7 @@ fetch('https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.objects
     });
 
 function render(data) {
-		document.querySelector('.img1').src = data.images[0].b.url
+	document.querySelector('.img1').src = data.images[0].b.url
 }
 
 var img1 = document.querySelector('.img1');

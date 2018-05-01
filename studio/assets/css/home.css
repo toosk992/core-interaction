@@ -169,19 +169,35 @@ h1:hover {
 
     .mid {
         font-size: 180px;
+        padding-bottom: 100px;
     }
 
     .banner-image {
         display: none;
     }
 
-    .banner-image {
+    .banner-image:after {
         content: url("assets/img/home/banner-mobile.jpg");
     }
 
-    div .movies {
-        display: flex;
-        justify-content: center;
+    .movies-text {
+        display: none;
+    }
+
+    .movies-text:after {
+        transform: rotate(90deg);
+    }
+
+    .square-1 {
+        background-color: blue;
+    }
+
+    .movies {
+        align-content: center;
+    }
+
+    .television {
+        align-content: center;
     }
 
 }
