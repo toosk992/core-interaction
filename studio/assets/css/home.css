@@ -53,6 +53,8 @@ h1:hover {
 .movies {
     position: relative;
     margin-left: 160px;
+    margin-top: 200px;
+    padding-bottom: 700px;
 }
 
 .movies-text {
@@ -161,4 +163,25 @@ h1:hover {
 .television-video:hover {
     opacity: 1;
     transition: opacity .5s ease-in;
+}
+
+@media (max-width: 375px) {
+
+    .mid {
+        font-size: 180px;
+    }
+
+    .banner-image {
+        display: none;
+    }
+
+    .banner-image {
+        content: url("assets/img/home/banner-mobile.jpg");
+    }
+
+    div .movies {
+        display: flex;
+        justify-content: center;
+    }
+
 }
