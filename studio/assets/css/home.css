@@ -63,8 +63,8 @@ h1:hover {
     font-size: 90px;
     z-index: 10;
     transform: rotate(270deg);
-    right: 1120px;
-    top: 190px;
+    margin-left: -140px;
+    margin-top: 190px;
     text-decoration: none;
     color: black;
 }
@@ -121,8 +121,8 @@ h1:hover {
     font-family: "domaine";
     font-size: 90px;
     z-index: 10;
-    right: 245px;
-    top: -80px;
+    margin-left: 610px;
+    margin-top: -80px;
     text-decoration: none;
     color: black;
 }
@@ -185,19 +185,11 @@ h1:hover {
     }
 
     .movies-text:after {
-        transform: rotate(90deg);
+        content: "movies";
     }
 
     .square-1 {
         background-color: blue;
-    }
-
-    .movies {
-        align-content: center;
-    }
-
-    .television {
-        align-content: center;
     }
 
 }
