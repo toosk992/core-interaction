@@ -18,6 +18,24 @@ body {
     position: relative;
 }
 
+.mid {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 300px;
+    color: #ffce00;
+    z-index: 10;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.banner-image {
+    /* top: 0;
+    left: 0;
+    right: 0; */
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
 h1 {
     font-family: "neuzeit-grotesk", sans-serif;
     font-size: 300px;
@@ -30,24 +48,6 @@ h1:hover {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: #ffce00;
     -webkit-text-stroke-width: 3px;
-}
-
-.mid {
-    font-family: "neuzeit-grotesk", sans-serif;
-    font-size: 300px;
-    color: #ffce00;
-    z-index: 10;
-    text-decoration: none;
-    transition: 1s;
-}
-
-.banner-image {
-    top: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
 }
 
 .movies {
@@ -155,14 +155,40 @@ h1:hover {
     width: 562px;
     height: 422px;
     z-index: 5;
-    position: absolute;
     top: 0;
     right: 40px;
+    position: absolute;
 }
 
 .television-video:hover {
     opacity: 1;
     transition: opacity .5s ease-in;
+}
+
+.footer {
+    height: 150px;
+    background-color: #ffce00;
+    margin-top: 580px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+h2 {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 70px;
+    color: white;
+    z-index: 10;
+    text-decoration: none;
+}
+
+.footer-links {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
 }
 
 @media (max-width: 375px) {
