@@ -241,9 +241,14 @@ input[type=submit] {
     width: 140px;
 }
 
-@media (max-width: 475) {
+@media (max-width: 475px) {
+
+    body {
+        background-color: #FAF6EC;
+    }
+
     .television-video {
-        opacity: 0;
+        display: none;
     }
 
     .banner-image {
@@ -256,5 +261,5 @@ input[type=submit] {
 
     .television-text {
         transform: rotate(270deg);
-    }
+        margin-left: 0;
 }
