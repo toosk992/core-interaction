@@ -119,10 +119,36 @@ h1 {
     z-index: 5;
 }
 
+.bewitched {
+    position: relative;
+}
+
+.bewitched a:hover {
+    background-color: #ffce00;
+    color: white;
+    transition: ease-in .5s;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bewitched a {
+    font-family: "domaine";
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    transform: rotate(90deg) translateZ(1px);
+    right: -2%;
+    top: 30%;
+    z-index: 5;
+}
+
 img {
     width: 370px;
     padding: 40px;
 }
+
+/* FOOTER */
 
 .footer {
     height: 170px;

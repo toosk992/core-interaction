@@ -134,26 +134,46 @@ img:hover {
     right: 700px;
 }
 
-i {
-  border: solid black;
-  border-width: 0 20px 20px 0;
-  display: inline-block;
-  padding: 20px;
-  margin-left: 1200px;
-  margin-top: 80px;
+.arrows {
+    position: relative;
 }
 
-i:hover {
-  border: solid #ffce00;
-  border-width: 0 20px 20px 0;
-  display: inline-block;
-  padding: 20px;
-  margin-left: 1200px;
+.left {
+    position: absolute;
+    transform: rotate(135deg);
+    border: solid black;
+    border-width: 0 20px 20px 0;
+    display: inline-block;
+    padding: 20px;
+    margin-left: 170px;
+    margin-top: 80px;
+}
+
+.left:hover {
+    border: solid #ffce00;
+    border-width: 0 20px 20px 0;
+    padding: 20px;
+    margin-left: 1200px;
 }
 
 .right {
+    position: absolute;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+    border: solid black;
+    border-width: 0 20px 20px 0;
+    display: inline-block;
+    padding: 20px;
+    margin-left: 1200px;
+    margin-top: 80px;
+}
+
+.right:hover {
+    border: solid #ffce00;
+    border-width: 0 20px 20px 0;
+    display: inline-block;
+    padding: 20px;
+    margin-left: 1200px;
 }
 
 /* THE INCREDIBLES */
@@ -189,7 +209,7 @@ i:hover {
 .footer-incredibles {
     height: 170px;
     background-color: #ffce00;
-    margin-top: 200px;
+    margin-top: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -260,6 +280,114 @@ input[type=submit] {
     border: 1px solid black;
     width: 140px;
 }
+
+/* MAD MEN */
+
+* { box-sizing: border-box; }
+
+body {
+  height: 2000px;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  background: red;
+  transform: scale(0);
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: .5s opacity;
+}
+
+.item.is-visible {
+	opacity: 1;
+}
+
+.footer-madmen {
+    height: 170px;
+    background-color: #ffce00;
+    margin-top: 930px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: -50px;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+h2 a {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 80px;
+    color: white;
+    z-index: 10;
+    text-decoration: none;
+}
+
+.footer-links {
+    color: black;
+    text-decoration: none;
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.footer-links:hover {
+    color: white;
+}
+
+p .footer-text {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 17px;
+}
+.container-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type=text] {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 17px;
+    background-color: #ffce00;
+    border: 1px solid #ffce00;
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+input[type=submit] {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 17px;
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid black;
+    width: 140px;
+}
+
 
 /* CATCH ME IF YOU CAN */
 
@@ -575,113 +703,6 @@ input[type=submit] {
     width: 140px;
 }
 
-/* MAD MEN */
-
-* { box-sizing: border-box; }
-
-body {
-  height: 2000px;
-}
-
-#container {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-.item {
-  width: 100%;
-  height: 100%;
-  background: red;
-  transform: scale(0);
-  opacity: 0.5;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: .5s opacity;
-}
-
-.item.is-visible {
-	opacity: 1;
-}
-
-.footer-madmen {
-    height: 170px;
-    background-color: #ffce00;
-    margin-top: 930px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom: -50px;
-    margin-left: -50px;
-    margin-right: -50px;
-}
-
-h2 a {
-    font-family: "neuzeit-grotesk", sans-serif;
-    font-size: 80px;
-    color: white;
-    z-index: 10;
-    text-decoration: none;
-}
-
-.footer-links {
-    color: black;
-    text-decoration: none;
-    font-family: "neuzeit-grotesk", sans-serif;
-    font-size: 17px;
-    line-height: 1.5;
-}
-
-.footer-links:hover {
-    color: white;
-}
-
-p .footer-text {
-    font-family: "neuzeit-grotesk", sans-serif;
-    font-size: 17px;
-}
-.container-1 {
-    display: flex;
-    flex-direction: column;
-}
-
-.container-2 {
-    display: flex;
-    flex-direction: column;
-}
-
-form {
-    display: flex;
-    flex-direction: row;
-}
-
-input[type=text] {
-    font-family: "neuzeit-grotesk", sans-serif;
-    font-size: 17px;
-    background-color: #ffce00;
-    border: 1px solid #ffce00;
-    color: white;
-    border-bottom: 1px solid black;
-}
-
-input[type=submit] {
-    font-family: "neuzeit-grotesk", sans-serif;
-    font-size: 17px;
-    background-color: white;
-    color: black;
-    box-sizing: border-box;
-    padding: 10px;
-    display: inline-block;
-    border: 1px solid black;
-    width: 140px;
-}
-
 /* THE JETSONS */
 
 #jetsons-photos {
@@ -811,6 +832,300 @@ input[type=submit] {
 }
 
 .footer-moonrise {
+    height: 170px;
+    background-color: #ffce00;
+    margin-top: 360px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: -50px;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+h2 a {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 80px;
+    color: white;
+    z-index: 10;
+    text-decoration: none;
+}
+
+.footer-links {
+    color: black;
+    text-decoration: none;
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.footer-links:hover {
+    color: white;
+}
+
+p .footer-text {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 17px;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type=text] {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 17px;
+    background-color: #ffce00;
+    border: 1px solid #ffce00;
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+input[type=submit] {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 17px;
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid black;
+    width: 140px;
+}
+
+/* THE BIG LEBOWSKI */
+
+#lebowski-photos {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 150px;
+}
+
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.footer-lebowski {
+    height: 170px;
+    background-color: #ffce00;
+    margin-top: 360px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: -50px;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+h2 a {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 80px;
+    color: white;
+    z-index: 10;
+    text-decoration: none;
+}
+
+.footer-links {
+    color: black;
+    text-decoration: none;
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.footer-links:hover {
+    color: white;
+}
+
+p .footer-text {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 17px;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type=text] {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 17px;
+    background-color: #ffce00;
+    border: 1px solid #ffce00;
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+input[type=submit] {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 17px;
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid black;
+    width: 140px;
+}
+
+/* THE BEST OF EVERYTHING */
+
+#best-photos {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 150px;
+}
+
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.footer-best {
+    height: 170px;
+    background-color: #ffce00;
+    margin-top: 360px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: -50px;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+h2 a {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 80px;
+    color: white;
+    z-index: 10;
+    text-decoration: none;
+}
+
+.footer-links {
+    color: black;
+    text-decoration: none;
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.footer-links:hover {
+    color: white;
+}
+
+p .footer-text {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 17px;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+input[type=text] {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 17px;
+    background-color: #ffce00;
+    border: 1px solid #ffce00;
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+input[type=submit] {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 17px;
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid black;
+    width: 140px;
+}
+
+/* BEWITCHED*/
+
+#bewitched-photos {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 150px;
+}
+
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.footer-bewitched {
     height: 170px;
     background-color: #ffce00;
     margin-top: 360px;
