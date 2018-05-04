@@ -241,31 +241,20 @@ input[type=submit] {
     width: 140px;
 }
 
-/* @media (max-width: 375px) {
-
-    .mid {
-        font-size: 180px;
-        padding-bottom: 100px;
+@media (max-width: 475) {
+    .television-video {
+        opacity: 0;
     }
 
     .banner-image {
-        display: none;
+        width: 200%;
     }
 
-    .banner-image:after {
-        content: url("assets/img/home/banner-mobile.jpg");
+    .mid {
+        font-size: 400px;
     }
 
-    .movies-text {
-        display: none;
+    .television-text {
+        transform: rotate(270deg);
     }
-
-    .movies-text:after {
-        content: "movies";
-    }
-
-    .square-1 {
-        background-color: blue;
-    }
-
-} */
+}
