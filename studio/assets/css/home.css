@@ -16,6 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    height: 100vh;
 }
 
 .mid {
@@ -31,9 +32,11 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    position: absolute;
     width: 100%;
+    height: 100vh;
     z-index: 1;
+    object-fit: cover;
+    position: absolute;
 }
 
 h1 {
@@ -50,11 +53,15 @@ h1:hover {
     -webkit-text-stroke-width: 3px;
 }
 
+.movie-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
 .movies {
     position: relative;
-    margin-left: 160px;
-    margin-top: 200px;
-    padding-bottom: 700px;
 }
 
 .movies-text {
@@ -73,47 +80,49 @@ h1:hover {
     color: #ffce00;
 }
 
-.movie-image {
+.image {
     width: 562px;
     height: 422px;
     z-index: 5;
-    position: absolute;
-    top: 20px;
-    left: 20px;
 }
 
-.movie-image:hover {
+.image:hover {
     opacity: .5;
 }
 
-.square-1 {
+.square {
     width: 562px;
     height: 422px;
     background-color: #ffce00;
     position: absolute;
-    top: 0px;
-    left: 40px;
-    z-index: 1;
+    top: -20px;
+    left: 20px;
+    z-index: -1;
 }
 
-.movie-video {
+.video {
     opacity: 0;
     width: 562px;
     height: 422px;
     z-index: 5;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 0px;
+    left: 0px;
 }
 
-.movie-video:hover {
+.video:hover {
     opacity: 1;
     transition: opacity .5s ease-in;
 }
 
+.television-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
 .television {
     position: relative;
-    margin-right: 160px;
 }
 
 .television-text {
@@ -121,8 +130,6 @@ h1:hover {
     font-family: "domaine";
     font-size: 90px;
     z-index: 10;
-    margin-left: 610px;
-    margin-top: -80px;
     text-decoration: none;
     color: black;
 }
@@ -131,44 +138,9 @@ h1:hover {
     color: #ffce00;
 }
 
-.television-image {
-    width: 562px;
-    height: 422px;
-    z-index: 5;
-    position: absolute;
-    top: 0px;
-    right: 40px;
-}
-
-.square-2 {
-    width: 562px;
-    height: 422px;
-    background-color: #ffce00;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1;
-}
-
-.television-video {
-    opacity: 0;
-    width: 562px;
-    height: 422px;
-    z-index: 5;
-    top: 0;
-    right: 40px;
-    position: absolute;
-}
-
-.television-video:hover {
-    opacity: 1;
-    transition: opacity .5s ease-in;
-}
-
 .footer {
     height: 170px;
     background-color: #ffce00;
-    margin-top: 580px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -241,25 +213,30 @@ input[type=submit] {
     width: 140px;
 }
 
-@media (max-width: 475px) {
+@media (min-width: 768px) {
 
-    body {
-        background-color: #FAF6EC;
+    .movie-wrapper {
+        justify-content: flex-start;
+        margin-left: 300px;
     }
 
-    .television-video {
-        display: none;
+    .television-wrapper {
+        justify-content: flex-end;
+        margin-right: 300px;
     }
 
-    .banner-image {
-        width: 200%;
-    }
+}
 
-    .mid {
-        font-size: 400px;
-    }
+@media (max-width: 768px) {
 
-    .television-text {
-        transform: rotate(270deg);
+    .movie-wrapper {
+        justify-content: center;
         margin-left: 0;
+    }
+
+    .television-wrapper {
+        justify-content: center;
+        margin-right: 0;
+    }
+
 }
