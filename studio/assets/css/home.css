@@ -139,7 +139,7 @@ h1:hover {
 }
 
 .footer {
-    height: 170px;
+    height: 400px;
     background-color: #ffce00;
     display: flex;
     justify-content: space-around;
@@ -213,7 +213,7 @@ input[type=submit] {
     width: 140px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) { /* DESKTOP */
 
     .movie-wrapper {
         justify-content: flex-start;
@@ -225,9 +225,13 @@ input[type=submit] {
         margin-right: 300px;
     }
 
+    .footer {
+        height: 200px;
+    }
+
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) { /* MOBILE */
 
     .movie-wrapper {
         justify-content: center;
