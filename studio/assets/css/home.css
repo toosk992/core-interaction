@@ -24,6 +24,7 @@ body {
     font-family: "neuzeit-grotesk", sans-serif;
     font-size: 300px;
     color: #F4EBD7;
+    -webkit-text-stroke: 1px black;
     z-index: 10;
     text-decoration: none;
     transition: 1s;
@@ -46,12 +47,6 @@ h1 {
     color: #F4EBD7;
     z-index: 10;
     text-decoration: none;
-}
-
-h1:hover {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: #F4EBD7;
-    -webkit-text-stroke-width: 3px;
 }
 
 .movie-wrapper {
