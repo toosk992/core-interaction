@@ -67,11 +67,11 @@ h1:hover {
 .movies-text {
     position: absolute;
     font-family: "domaine";
-    font-size: 90px;
+    font-size: 80px;
     z-index: 10;
     transform: rotate(270deg);
-    margin-left: -140px;
-    margin-top: 190px;
+    margin-left: -148px;
+    margin-top: 120px;
     text-decoration: none;
     color: black;
 }
@@ -128,10 +128,13 @@ h1:hover {
 .television-text {
     position: absolute;
     font-family: "domaine";
-    font-size: 90px;
+    transform: rotate(270deg);
+    font-size: 80px;
     z-index: 10;
     text-decoration: none;
     color: black;
+    margin-top: 146px;
+    margin-left: -192px;
 }
 
 .television-text:hover {
@@ -213,7 +216,7 @@ input[type=submit] {
     width: 140px;
 }
 
-@media screen and (min-width: 768px) { /* DESKTOP */
+@media screen and (min-width: 400px) { /* DESKTOP */
 
     .movie-wrapper {
         justify-content: flex-start;
@@ -231,7 +234,7 @@ input[type=submit] {
 
 }
 
-@media screen and (max-width: 768px) { /* MOBILE */
+@media screen and (max-width: 400px) { /* MOBILE */
 
     .movie-wrapper {
         justify-content: center;
