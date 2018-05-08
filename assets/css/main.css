@@ -1,3 +1,7 @@
+body {
+    background-color: #F4EBD7;
+}
+
 .container {
     display: flex;
     flex-direction: row;
@@ -11,11 +15,11 @@ a {
     font-weight: 600;
     font-family: "neuzeit-grotesk", sans-serif;
     text-decoration: none;
-    color: #ffce00;
+    color: black;
 }
 
 a:hover {
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-color: #ffce00;
+    -webkit-text-fill-color: #F4EBD7;
+    -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1px;
 }
