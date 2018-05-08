@@ -21,6 +21,7 @@ ul {
     justify-content: flex-end;
     padding-left: 80px;
     padding-right: 80px;
+    padding-top: 20px;
 }
 
 li a {

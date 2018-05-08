@@ -3,6 +3,10 @@
     src: url("../fonts/domaine.otf");
 }
 
+body {
+    background-color: #F4EBD7;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -13,6 +17,7 @@ ul {
     justify-content: flex-end;
     padding-left: 80px;
     padding-right: 80px;
+    padding-top: 20px;
 }
 
 li a {
@@ -24,12 +29,12 @@ li a {
 }
 
 li a:hover {
-    color: #ffce00;
+    color: white;
 }
 
 #mid a {
     font-weight: 700;
-    color: #ffce00;
+    color: black;
     font-size: 60px;
     padding-left: 0;
     z-index: 5;
@@ -72,192 +77,55 @@ h1 {
     justify-content: center;
 }
 
-.incredibles {
-    position: relative;
-}
-
-.incredibles a {
-    font-family: "domaine";
-    font-size: 40px;
-    color: black;
-    text-decoration: none;
-    position: absolute;
-    top: 496px;
-    right: 120px;
-}
-
-.incredibles a:hover {
-    background-color: #ffce00;
-    color: white;
-    transition: ease-in .5s;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.catch {
-    position: relative;
-}
-
-.catch a {
-    font-family: "domaine";
-    font-size: 40px;
-    color: black;
-    text-decoration: none;
-    position: absolute;
-    top: 493px;
-    right: 50px;
-    z-index: 5;
-}
-
-
-.catch a:hover {
-    background-color: #ffce00;
-    color: white;
-    transition: ease-in .5s;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.moonrise {
-    position: relative;
-}
-
-.moonrise a {
-    font-family: "domaine";
-    font-size: 40px;
-    color: black;
-    text-decoration: none;
-    position: absolute;
-    top: 493px;
-    right: 50px;
-    z-index: 5;
-}
-
-.moonrise a:hover {
-    background-color: #ffce00;
-    color: white;
-    transition: ease-in .5s;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.graduate {
-    position: relative;
-}
-
-.graduate a {
-    font-family: "domaine";
-    font-size: 40px;
-    color: black;
-    text-decoration: none;
-    position: absolute;
-    top: 493px;
-    right: 50px;
-    z-index: 5;
-}
-
-.graduate a:hover {
-    background-color: #ffce00;
-    color: white;
-    transition: ease-in .5s;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.budapest {
-    position: relative;
-}
-
-.budapest a {
-    font-family: "domaine";
-    font-size: 40px;
-    color: black;
-    text-decoration: none;
-    position: absolute;
-    top: 493px;
-    right: 50px;
-    z-index: 5;
-}
-
-.budapest a:hover {
-    background-color: #ffce00;
-    color: white;
-    transition: ease-in .5s;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 img {
     width: 370px;
-    padding: 40px;
+    margin: 40px;
+    border: black solid 1px;
 }
 
-.lebowski {
-    position: relative;
+.movie {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
 }
 
-.lebowski a {
-    font-family: "domaine";
-    font-size: 40px;
+.movie a {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 35px;
     color: black;
+    font-weight: 700;
     text-decoration: none;
-    position: absolute;
-    top: 493px;
-    right: 50px;
-    z-index: 5;
+    display: block;
+    margin-bottom: 20px;
 }
 
-.lebowski a:hover {
-    background-color: #ffce00;
-    color: white;
-    transition: ease-in .5s;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.best-of-everything {
-    position: relative;
-}
-
-.best-of-everything a {
+.year {
     font-family: "domaine";
-    font-size: 40px;
-    color: black;
-    text-decoration: none;
-    position: absolute;
-    top: 493px;
-    right: 50px;
-    z-index: 5;
-}
-
-.best-of-everything a:hover {
-    background-color: #ffce00;
-    color: white;
-    transition: ease-in .5s;
-    padding-left: 10px;
-    padding-right: 10px;
+    font-size: 17px;
+    margin-top: -20px;
 }
 
 /* FOOTER */
 
 .footer {
-    height: 170px;
-    background-color: #ffce00;
-    margin-top: 100px;
+    height: 400px;
+    background-color: #F4EBD7;
     display: flex;
     justify-content: space-around;
+    border-top: black solid 1px;
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
     margin-bottom: -50px;
     margin-left: -50px;
     margin-right: -50px;
+    margin-top: 100px;
 }
 
 h2 a {
     font-family: "neuzeit-grotesk", sans-serif;
     font-size: 80px;
-    color: white;
+    color: black;
     z-index: 10;
     text-decoration: none;
 }
@@ -298,8 +166,8 @@ form {
 input[type=text] {
     font-family: "neuzeit-grotesk", sans-serif;
     font-size: 17px;
-    background-color: #ffce00;
-    border: 1px solid #ffce00;
+    background-color: #F4EBD7;
+    border: 1px solid #F4EBD7;
     color: white;
     border-bottom: 1px solid black;
 }
@@ -314,4 +182,12 @@ input[type=submit] {
     display: inline-block;
     border: 1px solid black;
     width: 140px;
+}
+
+@media screen and (min-width: 400px) { /* DESKTOP */
+
+    .footer {
+        height: 200px;
+    }
+
 }

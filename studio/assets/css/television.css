@@ -3,6 +3,10 @@
     src: url("../fonts/domaine.otf");
 }
 
+body {
+    background-color: #F4EBD7;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -13,6 +17,7 @@ ul {
     justify-content: flex-end;
     padding-left: 80px;
     padding-right: 80px;
+    padding-top: 20px;
 }
 
 li a {
@@ -24,12 +29,12 @@ li a {
 }
 
 li a:hover {
-    color: #ffce00;
+    color: white;
 }
 
 #mid a {
     font-weight: 700;
-    color: #ffce00;
+    color: black;
     font-size: 60px;
     padding-left: 0;
     z-index: 5;
@@ -66,108 +71,61 @@ h1 {
 }
 
 .inner {
-    column-count: 2;
-    text-align: center;
-    margin-left: 170px;
-    margin-right: 170px;
-}
-
-.mad-men {
-    position: relative;
-}
-
-.mad-men a:hover {
-    background-color: #ffce00;
-    color: white;
-    transition: ease-in .5s;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.mad-men a {
-    font-family: "domaine";
-    font-size: 40px;
-    color: black;
-    text-decoration: none;
-    position: absolute;
-    transform: rotate(90deg) translateZ(1px);
-    right: -2%;
-    top: 70%;
-    z-index: 5;
-}
-
-.jetsons {
-    position: relative;
-}
-
-.jetsons a:hover {
-    background-color: #ffce00;
-    color: white;
-    transition: ease-in .5s;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.jetsons a {
-    font-family: "domaine";
-    font-size: 40px;
-    color: black;
-    text-decoration: none;
-    position: absolute;
-    top: 87%;
-    right: 46%;
-    z-index: 5;
-}
-
-.bewitched {
-    position: relative;
-}
-
-.bewitched a:hover {
-    background-color: #ffce00;
-    color: white;
-    transition: ease-in .5s;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.bewitched a {
-    font-family: "domaine";
-    font-size: 40px;
-    color: black;
-    text-decoration: none;
-    position: absolute;
-    transform: rotate(90deg) translateZ(1px);
-    right: -2%;
-    top: 30%;
-    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 img {
     width: 370px;
-    padding: 40px;
+    margin: 40px;
+    border: black solid 1px;
+}
+
+.tv {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+.tv a {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 35px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.year {
+    font-family: "domaine";
+    font-size: 17px;
+    margin-top: -20px;
 }
 
 /* FOOTER */
 
 .footer {
-    height: 170px;
-    background-color: #ffce00;
-    margin-top: 200px;
+    height: 400px;
+    background-color: #F4EBD7;
     display: flex;
     justify-content: space-around;
+    border-top: black solid 1px;
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
     margin-bottom: -50px;
     margin-left: -50px;
     margin-right: -50px;
+    margin-top: 100px;
 }
 
 h2 a {
     font-family: "neuzeit-grotesk", sans-serif;
     font-size: 80px;
-    color: white;
+    color: black;
     z-index: 10;
     text-decoration: none;
 }
@@ -208,8 +166,8 @@ form {
 input[type=text] {
     font-family: "neuzeit-grotesk", sans-serif;
     font-size: 17px;
-    background-color: #ffce00;
-    border: 1px solid #ffce00;
+    background-color: #F4EBD7;
+    border: 1px solid #F4EBD7;
     color: white;
     border-bottom: 1px solid black;
 }
@@ -224,4 +182,12 @@ input[type=submit] {
     display: inline-block;
     border: 1px solid black;
     width: 140px;
+}
+
+@media screen and (min-width: 400px) { /* DESKTOP */
+
+    .footer {
+        height: 200px;
+    }
+
 }

@@ -3,6 +3,10 @@
     src: url("../fonts/domaine.otf");
 }
 
+body {
+    background-color: #F4EBD7;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -13,6 +17,7 @@ ul {
     justify-content: flex-end;
     padding-left: 80px;
     padding-right: 80px;
+    padding-top: 20px;
 }
 
 li a {
@@ -24,12 +29,12 @@ li a {
 }
 
 li a:hover {
-    color: #ffce00;
+    color: white;
 }
 
 #mid a {
     font-weight: 700;
-    color: #ffce00;
+    color: black;
     font-size: 60px;
     padding-left: 0;
     z-index: 5;
@@ -81,29 +86,30 @@ h1 {
 
 a {
     text-decoration: underline;
-    text-decoration-color: #ffce00;
+    text-decoration-color: white;
     text-decoration-style: wavy;
     color: black;
 }
 
 .footer {
-    height: 170px;
-    background-color: #ffce00;
-    margin-top: 200px;
+    height: 400px;
+    background-color: #F4EBD7;
     display: flex;
     justify-content: space-around;
+    border-top: black solid 1px;
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
     margin-bottom: -50px;
     margin-left: -50px;
     margin-right: -50px;
+    margin-top: 100px;
 }
 
 h2 a {
     font-family: "neuzeit-grotesk", sans-serif;
     font-size: 80px;
-    color: white;
+    color: black;
     z-index: 10;
     text-decoration: none;
 }
@@ -144,8 +150,8 @@ form {
 input[type=text] {
     font-family: "neuzeit-grotesk", sans-serif;
     font-size: 17px;
-    background-color: #ffce00;
-    border: 1px solid #ffce00;
+    background-color: #F4EBD7;
+    border: 1px solid #F4EBD7;
     color: white;
     border-bottom: 1px solid black;
 }
@@ -160,4 +166,11 @@ input[type=submit] {
     display: inline-block;
     border: 1px solid black;
     width: 140px;
+}
+@media screen and (min-width: 400px) { /* DESKTOP */
+
+    .footer {
+        height: 200px;
+    }
+
 }
