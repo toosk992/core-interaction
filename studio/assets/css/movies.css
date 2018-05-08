@@ -66,9 +66,10 @@ h1 {
 }
 
 .inner {
-    column-count: 2;
-    margin-left: 170px;
-    margin-right: 170px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .incredibles {
@@ -80,11 +81,9 @@ h1 {
     font-size: 40px;
     color: black;
     text-decoration: none;
-    transform: rotate(90deg);
     position: absolute;
-    top: 57%;
-    right: -3%;
-    z-index: 20;
+    top: 496px;
+    right: 120px;
 }
 
 .incredibles a:hover {
@@ -105,8 +104,8 @@ h1 {
     color: black;
     text-decoration: none;
     position: absolute;
-    top: 87%;
-    right: 25%;
+    top: 493px;
+    right: 50px;
     z-index: 5;
 }
 
@@ -129,9 +128,8 @@ h1 {
     color: black;
     text-decoration: none;
     position: absolute;
-    transform: rotate(90deg) translateZ(1px);
-    top: 55%;
-    right: -10%;
+    top: 493px;
+    right: 50px;
     z-index: 5;
 }
 
@@ -153,8 +151,8 @@ h1 {
     color: black;
     text-decoration: none;
     position: absolute;
-    top: 87%;
-    right: 45%;
+    top: 493px;
+    right: 50px;
     z-index: 5;
 }
 
@@ -176,9 +174,8 @@ h1 {
     color: black;
     text-decoration: none;
     position: absolute;
-    transform: rotate(90deg) translateZ(1px);
-    top: 40%;
-    right: -28%;
+    top: 493px;
+    right: 50px;
     z-index: 5;
 }
 
@@ -205,8 +202,8 @@ img {
     color: black;
     text-decoration: none;
     position: absolute;
-    top: 87.5%;
-    right: 35%;
+    top: 493px;
+    right: 50px;
     z-index: 5;
 }
 
@@ -228,9 +225,8 @@ img {
     color: black;
     text-decoration: none;
     position: absolute;
-    transform: rotate(90deg) translateZ(1px);
-    top: 55%;
-    right: -22%;
+    top: 493px;
+    right: 50px;
     z-index: 5;
 }
 

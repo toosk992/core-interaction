@@ -5,6 +5,7 @@
 
 body {
     position: relative;
+    background-color: #F4EBD7;
 }
 
 .container {
@@ -22,7 +23,7 @@ body {
 .mid {
     font-family: "neuzeit-grotesk", sans-serif;
     font-size: 300px;
-    color: #ffce00;
+    color: #F4EBD7;
     z-index: 10;
     text-decoration: none;
     transition: 1s;
@@ -42,14 +43,14 @@ body {
 h1 {
     font-family: "neuzeit-grotesk", sans-serif;
     font-size: 300px;
-    color: #ffce00;
+    color: #F4EBD7;
     z-index: 10;
     text-decoration: none;
 }
 
 h1:hover {
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: #ffce00;
+    -webkit-text-stroke-color: #F4EBD7;
     -webkit-text-stroke-width: 3px;
 }
 
@@ -77,13 +78,14 @@ h1:hover {
 }
 
 .movies-text:hover {
-    color: #ffce00;
+    color: white;
 }
 
 .image {
     width: 562px;
     height: 422px;
     z-index: 5;
+    border: black solid 1px;
 }
 
 .image:hover {
@@ -93,11 +95,12 @@ h1:hover {
 .square {
     width: 562px;
     height: 422px;
-    background-color: #ffce00;
+    background-color: white;
     position: absolute;
     top: -20px;
     left: 20px;
     z-index: -1;
+    border: black solid 1px;
 }
 
 .video {
@@ -138,14 +141,15 @@ h1:hover {
 }
 
 .television-text:hover {
-    color: #ffce00;
+    color: white;
 }
 
 .footer {
     height: 400px;
-    background-color: #ffce00;
+    background-color: #F4EBD7;
     display: flex;
     justify-content: space-around;
+    border-top: black solid 1px;
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
@@ -157,7 +161,7 @@ h1:hover {
 h2 a {
     font-family: "neuzeit-grotesk", sans-serif;
     font-size: 80px;
-    color: white;
+    color: black;
     z-index: 10;
     text-decoration: none;
 }
@@ -198,8 +202,8 @@ form {
 input[type=text] {
     font-family: "neuzeit-grotesk", sans-serif;
     font-size: 17px;
-    background-color: #ffce00;
-    border: 1px solid #ffce00;
+    background-color: #F4EBD7;
+    border: 1px solid #F4EBD7;
     color: white;
     border-bottom: 1px solid black;
 }
