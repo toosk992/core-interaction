@@ -48,6 +48,27 @@ h1 {
     text-decoration: none;
 }
 
+.text-wrapper {
+    display: inline-block;
+}
+
+.small-square {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 20px;
+    z-index: -1;
+    margin-left: -8px;
+    margin-top: -8px;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    position: absolute;
+}
+
 .movie-wrapper {
     display: flex;
     justify-content: center;
@@ -59,19 +80,20 @@ h1 {
     vertical-align: top;
     display: inline-block;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .movies-text {
     font-family: "neuzeit-grotesk", sans-serif;
     font-size: 20px;
-    z-index: 15;
-    margin-left: 48px;
-    margin-top: 20px;
+    z-index: 20;
     text-decoration: none;
     color: black;
     font-weight: 300;
     text-decoration: none;
-    display: block;
+    display: inline-block;
     background-color: white;
     padding: 10px;
     border: 1px solid black;
@@ -82,34 +104,42 @@ h1 {
     height: 187.5px;
     z-index: 5;
     border: black solid 1px;
+    margin-bottom: 40px;
 }
 
 .television-wrapper {
     display: flex;
     justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 0;
 }
 
 .television {
     vertical-align: top;
     display: inline-block;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .television-text {
-    font-family: "domaine";
-    transform: rotate(270deg);
-    font-size: 80px;
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-size: 20px;
     z-index: 15;
     text-decoration: none;
     color: black;
-    margin-top: 146px;
-    margin-left: -192px;
-    display: block;
+    font-weight: 300;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
 }
 
-/* .video {
-    visibility: hidden;
-} */
+.video {
+    display: none;
+}
 
 /* FOOTER */
 
@@ -118,6 +148,8 @@ h1 {
     background-color: #F4EBD7;
     display: flex;
     justify-content: space-around;
+    text-align: center;
+    flex-direction: column;
     border-top: black solid 1px;
     align-items: center;
     padding-left: 50px;
@@ -125,11 +157,12 @@ h1 {
     margin-bottom: -50px;
     margin-left: -50px;
     margin-right: -50px;
+    margin-top: 140px;
 }
 
 h2 a {
     font-family: "neuzeit-grotesk", sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     color: black;
     z-index: 10;
     text-decoration: none;
@@ -163,6 +196,10 @@ p {
     flex-direction: column;
 }
 
+.newsletter {
+    display: none;
+}
+
 form {
     display: flex;
     flex-direction: row;
@@ -189,7 +226,7 @@ input[type=submit] {
     width: 140px;
 }
 
-@media screen and (min-width: 400px) { /* DESKTOP */
+@media (min-width: 400px) { /* DESKTOP */
 
     .movie-wrapper {
         justify-content: flex-start;
@@ -246,10 +283,13 @@ input[type=submit] {
         font-size: 80px;
         z-index: 15;
         transform: rotate(270deg);
-        margin-left: -148px;
-        margin-top: -300px;
+        margin-left: -430px;
+        margin-top: -335px;
         text-decoration: none;
         color: black;
+        background-color: transparent;
+        padding: 0;
+        border: none;
     }
 
     .movies-text:hover {
@@ -273,8 +313,11 @@ input[type=submit] {
         z-index: 15;
         text-decoration: none;
         color: black;
-        margin-top: 146px;
-        margin-left: -192px;
+        margin-top: -300px;
+        margin-left: -474px;
+        background-color: transparent;
+        padding: 0;
+        border: none;
     }
 
     .television-text:hover {
@@ -293,11 +336,44 @@ input[type=submit] {
         position: absolute;
         top: 0px;
         left: 0px;
+        display: block;
     }
 
     .video:hover {
         opacity: 1;
         transition: opacity .5s ease-in;
+    }
+
+    .small-square {
+        display: none;
+    }
+
+    .footer {
+        height: 200px;
+        background-color: #F4EBD7;
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+        border-top: black solid 1px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: -50px;
+        margin-left: -50px;
+        margin-right: -50px;
+        margin-top: 140px;
+        flex-direction: row;
+    }
+
+    .newsletter {
+        display: block;
+    }
+
+    h2 a {
+        font-family: "neuzeit-grotesk", sans-serif;
+        font-size: 80px;
+        color: black;
+        z-index: 10;
+        text-decoration: none;
     }
 
 }
