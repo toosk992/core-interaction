@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Studio</title>
         <link rel="stylesheet" href="assets/css/movies.css">
         <link rel="stylesheet" href="https://use.typekit.net/mmv4pgb.css">
@@ -8,12 +9,16 @@
     </head>
     <body>
 
-        <ul>
-            <li id="mid"><a href="index.html">mid</a></li>
-            <li id="movies"><a href="movies.html">movies</a></li>
-            <li id="television"><a href="television.html">television</a></li>
-            <li id="info"><a href="info.html">info</a></li>
-        </ul>
+        <header class="header">
+          <a href="index.html" class="logo">mid</a>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul class="menu">
+            <li><a href="movies.html">movies</a></li>
+            <li><a href="television.html">television</a></li>
+            <li><a href="info.html">info</a></li>
+          </ul>
+        </header>
 
         <section class="outer">
 
@@ -94,4 +99,5 @@
 
         </section>
     </body>
+    <script src="assets/js/main.js"></script>
 </html>
