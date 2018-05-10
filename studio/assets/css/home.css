@@ -6,6 +6,7 @@
 body {
     position: relative;
     background-color: #F4EBD7;
+    overflow-x: hidden;
 }
 
 .container {
@@ -126,7 +127,7 @@ h1 {
 .television-text {
     font-family: "neuzeit-grotesk", sans-serif;
     font-size: 20px;
-    z-index: 15;
+    z-index: 20;
     text-decoration: none;
     color: black;
     font-weight: 300;
@@ -146,8 +147,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: white;
-  border: black solid 1px;
+    background-color: white;
+    border: black solid 1px;
+}
+
+body::-webkit-scrollbar-corner {
+    background-color: #F4EBD7;
 }
 
 /* FOOTER */

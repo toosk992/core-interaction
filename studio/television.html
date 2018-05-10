@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Studio</title>
+        <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+        <title>television</title>
         <link rel="stylesheet" href="assets/css/television.css">
         <link rel="stylesheet" href="https://use.typekit.net/mmv4pgb.css">
         <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
     </head>
     <body>
-        <ul class="nav">
-            <li id="mid"><a href="index.html">mid</a></li>
-            <li id="movies"><a href="movies.html">movies</a></li>
-            <li id="television"><a href="television.html">television</a></li>
-            <li id="info"><a href="info.html">info</a></li>
-        </ul>
+
+        <header class="header">
+          <a href="index.html" class="logo">mid</a>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul class="menu">
+            <li><a href="movies.html">movies</a></li>
+            <li><a href="television.html">television</a></li>
+            <li><a href="info.html">info</a></li>
+          </ul>
+        </header>
 
         <section class="outer">
 
@@ -69,4 +75,5 @@
 
         </section>
     </body>
+    <script src="assets/js/main.js"></script>
 </html>

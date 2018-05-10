@@ -33,13 +33,6 @@ li a:hover {
     color: white;
 }
 
-#movies {
-    flex: 0;
-}
-
-#televison {
-    flex: 0;
-}
 a {
   color: #000;
 }
@@ -99,7 +92,7 @@ a {
   display: inline-block;
   float: right;
   padding-top: 35px;
-  padding-right: 85px;
+  padding-right: 35px;
   position: relative;
   user-select: none;
 }
@@ -185,7 +178,7 @@ h1 {
 }
 
 img {
-    width: 370px;
+    width: 280px;
     margin: 40px;
     border: black solid 1px;
 }
@@ -223,10 +216,6 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-corner {
     background-color: #F4EBD7;
-}
-
-body::-webkit-horizontal {
-    display: none;
 }
 
 /* FOOTER */
@@ -392,6 +381,12 @@ input[type=submit] {
         color: black;
         z-index: 10;
         text-decoration: none;
+    }
+
+    img {
+        width: 370px;
+        margin: 40px;
+        border: black solid 1px;
     }
 
 }
