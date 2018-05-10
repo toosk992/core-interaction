@@ -5,6 +5,7 @@
 
 body {
     background-color: #F4EBD7;
+    overflow-x: hidden;
 }
 
 .nav {
@@ -211,6 +212,23 @@ img {
     margin-top: -20px;
 }
 
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: white;
+    border: black solid 1px;
+}
+
+body::-webkit-scrollbar-corner {
+    background-color: #F4EBD7;
+}
+
+body::-webkit-horizontal {
+    display: none;
+}
+
 /* FOOTER */
 
 .footer {
@@ -222,7 +240,6 @@ img {
     flex-direction: column;
     border-top: black solid 1px;
     align-items: center;
-    padding-left: 50px;
     padding-right: 50px;
     margin-bottom: -50px;
     margin-left: -50px;

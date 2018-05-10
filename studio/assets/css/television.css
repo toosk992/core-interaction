@@ -5,6 +5,7 @@
 
 body {
     background-color: #F4EBD7;
+    overflow-x: hidden;
 }
 
 .nav {
@@ -103,6 +104,15 @@ img {
     font-family: "domaine";
     font-size: 17px;
     margin-top: -20px;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  border: black solid 1px;
 }
 
 /* FOOTER */
