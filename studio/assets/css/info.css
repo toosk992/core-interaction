@@ -33,24 +33,122 @@ li a:hover {
     color: white;
 }
 
-#mid a {
-    font-weight: 700;
-    color: black;
-    font-size: 60px;
-    padding-left: 0;
-    z-index: 5;
+a {
+  color: #000;
 }
 
-#mid {
+/* header */
+
+.header {
+  z-index: 3;
+  overflow: auto;
+  width: 100%;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 30px;
+  float: right;
+  text-align: right;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: .5;
+}
+
+.header .logo {
+    font-family: "neuzeit-grotesk", sans-serif;
+    font-weight: 700;
+    display: block;
+    float: left;
+    font-size: 60px;
+    padding-left: 20px;
+    text-decoration: none;
+    z-index: 5;
     margin-right: auto;
 }
 
-#movies {
-    flex: 0;
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
 }
 
-#televison {
-    flex: 0;
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding-top: 35px;
+  padding-right: 35px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: black;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
 }
 
 .outer {
@@ -59,30 +157,33 @@ li a:hover {
 
 h1 {
     font-family: "domaine";
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 300;
-    padding-left: 80px;
+    padding-left: 20px;
 }
 
 .subtitle-one {
     font-family: "neuzeit-grotesk";
     position: absolute;
-    top: -10px;
-    padding-left: 80px;
+    top: -22px;
+    padding-left: 20px;
+    font-size: 20px;
 }
 
 .subtitle-two {
     font-family: "neuzeit-grotesk";
     position: absolute;
-    top: 190px;
-    padding-left: 80px;
+    top: 334px;
+    padding-left: 20px;
+    font-size: 20px;
 }
 
 .subtitle-three {
     font-family: "neuzeit-grotesk";
     position: absolute;
-    top: 330px;
-    padding-left: 80px;
+    top: 514px;
+    padding-left: 20px;
+    font-size: 20px;
 }
 
 a {
@@ -97,28 +198,35 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: white;
-  border: black solid 1px;
+    background-color: white;
+    border: black solid 1px;
 }
+
+body::-webkit-scrollbar-corner {
+    background-color: #F4EBD7;
+}
+
+/* FOOTER */
 
 .footer {
     height: 400px;
     background-color: #F4EBD7;
     display: flex;
     justify-content: space-around;
+    text-align: center;
+    flex-direction: column;
     border-top: black solid 1px;
     align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 0;
     margin-bottom: -50px;
     margin-left: -50px;
     margin-right: -50px;
-    margin-top: 100px;
+    margin-top: 140px;
 }
 
 h2 a {
     font-family: "neuzeit-grotesk", sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     color: black;
     z-index: 10;
     text-decoration: none;
@@ -152,6 +260,10 @@ p {
     flex-direction: column;
 }
 
+.newsletter {
+    display: none;
+}
+
 form {
     display: flex;
     flex-direction: row;
@@ -177,10 +289,115 @@ input[type=submit] {
     border: 1px solid black;
     width: 140px;
 }
+
 @media (min-width: 400px) { /* DESKTOP */
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+
+    .header .logo {
+        font-size: 60px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 30px;
+    }
+
+    .header ul {
+        padding-right: 80px;
+    }
+
+    .header li {
+        float: left;
+    }
+
+    .header li a {
+        padding: 20px 30px;
+        font-size: 17px;
+    }
+
+    h1 {
+        font-family: "domaine";
+        font-size: 80px;
+        font-weight: 300;
+        padding-left: 80px;
+    }
+
+    .subtitle {
+        font-family: "neuzeit-grotesk";
+        position: absolute;
+        top: -10px;
+        padding-left: 80px;
+    }
+
+    .inner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     .footer {
         height: 200px;
+        background-color: #F4EBD7;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        border-top: black solid 1px;
+        padding-left: 50px;
+        padding-right: 200px;
+        margin-bottom: -50px;
+        margin-left: -50px;
+        margin-right: -50px;
+        margin-top: 140px;
+        flex-direction: row;
+    }
+
+    .newsletter {
+        display: block;
+    }
+
+    h2 a {
+        font-family: "neuzeit-grotesk", sans-serif;
+        font-size: 80px;
+        color: black;
+        z-index: 10;
+        text-decoration: none;
+    }
+
+    h1 {
+        padding-left: 80px;
+        font-size: 60px;
+    }
+
+    .subtitle-one {
+        font-family: "neuzeit-grotesk";
+        position: absolute;
+        padding-top: -9px;
+        padding-left: 80px;
+        font-size: 17px;
+    }
+
+    .subtitle-two {
+        font-family: "neuzeit-grotesk";
+        position: absolute;
+        top: 246px;
+        padding-left: 80px;
+        font-size: 17px;
+    }
+
+    .subtitle-three {
+        font-family: "neuzeit-grotesk";
+        position: absolute;
+        top: 460px;
+        padding-left: 80px;
+        font-size: 17px;
     }
 
 }

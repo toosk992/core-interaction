@@ -229,7 +229,7 @@ body::-webkit-scrollbar-corner {
     flex-direction: column;
     border-top: black solid 1px;
     align-items: center;
-    padding-right: 50px;
+    padding-right: 0;
     margin-bottom: -50px;
     margin-left: -50px;
     margin-right: -50px;
